@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review.restaurant = @restaurant
 
-    raise
+    # raise
 
     if @review.save
       redirect_to restaurant_path(@restaurant)
